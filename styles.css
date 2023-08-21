@@ -1,0 +1,302 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos do cabeçalho */
+header {
+  background-color: #8A2BE2; /* Roxo mais escuro */
+  color: white;
+  padding: 10px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+}
+
+.menu-icon {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.menu-list {
+  display: none;
+  list-style: none;
+}
+
+.menu-list li {
+  margin: 5px 0;
+}
+
+.menu-list a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Estilos do menu hamburguer */
+#menu-toggle {
+  display: none;
+}
+
+#menu-toggle:checked + .menu-icon + .menu-list {
+  display: block;
+}
+
+/* Estilos da seção de categorias */
+.categories {
+  padding: 20px;
+}
+
+.categories h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333; /* Cor do cabeçalho */
+}
+
+.categories ul {
+  list-style: none;
+  padding-left: 20px; /* Espaçamento à esquerda na lista */
+}
+
+.categories li {
+  margin: 8px 0;
+}
+
+.categories a {
+  color: #555; /* Tom de cinza um pouco mais escuro */
+  text-decoration: none;
+  transition: color 0.3s ease; /* Suaviza a transição de cor */
+}
+
+.categories a:hover {
+  color: #222; /* Cor mais escura ao passar o mouse */
+}
+
+/* Estilos do rodapé */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #f5f5f5;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.banner img {
+  max-width: 100%;
+  height: auto;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+}
+
+.links a {
+  color: #444; /* Cor dos links no rodapé */
+  margin-right: 20px;
+  text-decoration: none;
+}
+
+.menu-button {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+/* Estilo da barra de pesquisa */
+.search-box {
+  display: flex;
+  align-items: center;
+}
+
+.search input[type="text"] {
+            color: black;
+}
+
+#searchInput {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+button {
+  padding: 8px 15px;
+  font-size: 16px;
+  background-color: #555; /* Tom de cinza mais escuro para botão */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Suaviza a transição de cor de fundo */
+}
+
+button:hover {
+  background-color: #333; /* Cor mais escura ao passar o mouse */
+}
+
+/* Estilos do carrossel */
+.carousel-container {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.carousel-slide {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+  flex: 0 0 33.33%;
+  margin: 0 10px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  background-color: #8B008B; /* Tom de cinza um pouco mais claro */
+  overflow: hidden;
+  text-align: center;
+}
+
+.carousel-item img {
+  max-width: 100%;
+  height: auto;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.carousel-item h3 {
+  margin: 10px 0;
+  font-size: 1.2rem;
+  color: #333; /* Cor do título */
+}
+
+.carousel-item p {
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+  color: #777; /* Tom de cinza mais claro para o texto */
+}
+
+/* Botões de controle do carrossel */
+.carousel-controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.carousel-control {
+  cursor: pointer;
+  margin: 0 5px;
+  font-size: 1.5rem;
+  color: #555; /* Cor dos botões de controle */
+  transition: color 0.3s ease; /* Suaviza a transição de cor */
+}
+
+.carousel-control:hover {
+  color: #333; /* Cor mais escura ao passar o mouse */
+}
+
+.cat {
+  list-style-type: none;
+  padding: 0;
+  border: 2px solid #000;
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-bottom: 20px;
+  width: 200px;
+  padding: 10px;
+  background-color: #ffffff;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #007bff;
+}
+
+h2 {
+  margin-left: 5px;
+}
+
+@media screen and (max-width: 767px) {
+  /* Aqui você pode ajustar estilos específicos para telas menores */
+  /* Por exemplo, reduzir fontes, ajustar margens, etc. */
+}
+
+body {
+  background-color: #fdfd96;
+}
+
+.produtos {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.produto {
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: #8A2BE2;
+}
+
+.produto img {
+  max-width: 100%;
+  border-radius: 5px;
+  max-height: 120%;
+}
+
+.produto h3 {
+  margin-top: 10px;
+}
+
+.produto p {
+  font-weight: bold;
+}
+
+.produto button {
+  display: block;
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #333; /* alterado para cinza escuro */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.produto button:hover {
+  background-color: #333; /* alterado para cinza escuro */
+}
+
+.texto-riscado {
+  text-decoration: line-through;
+}
+
+.produtos .produto {
+  width: 300px; /* Valor aumentado em 20% */
+}
